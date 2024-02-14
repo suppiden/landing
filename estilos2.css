@@ -1,0 +1,127 @@
+.container {
+    background-color: aquamarine;
+    width: 50%;
+    height: 50%;
+    position:absolute;
+    z-index: 1;
+    
+}
+
+.containerrr{
+    position:absolute;
+    top: 600px;
+    width: 700px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+}
+
+#uno{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color: red;
+    display: block;
+}
+
+#dos{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color:black;
+    display: block;
+    visibility: hidden;
+}
+
+
+
+#doss{
+    position:absolute;
+    left: 300px;
+}
+
+
+.pruebas{
+    position:absolute;
+    top: 200px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+}
+
+#ocultador{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color: red;
+    display: block;
+}
+
+#ocultado{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color:black;
+    display: block;
+}
+
+
+.container2 {
+    background-color: black;
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    animation: cambio 1s forwards 7s;
+}
+
+
+@keyframes cambio{
+    from { z-index: 2; }
+    to { z-index: 1; }
+
+
+
+}
+.link1{
+    background-color: black;
+    position:absolute;
+    width: 50%;
+    height: 10%;
+    top :70%;
+    
+}
+
+
+.link2{
+    background-color: aquamarine;
+    width: 50%;
+    height: 10%;
+    position:absolute;
+    left:50%;
+    top:70%;
+    left:65%;
+}
+
+
+.mover1{
+
+    position:absolute;
+    top: 0px;
+    left: -4px ;
+
+}
+
+
+
+.mover1:hover{
+    filter: drop-shadow(10px 10px 10px #FFF)
+}
+
+
+p{
+    position:absolute;
+    top: 150px;
+    left: 490px ;
+
+}

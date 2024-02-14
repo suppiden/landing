@@ -1,0 +1,301 @@
+@keyframes blinkAndFade {
+    0%, 10% {
+      opacity: 1;
+      filter: drop-shadow(5px 5px 5px #e80707);
+    }
+    50% {
+      filter: drop-shadow(0px 0px 0px #e80707);
+    }
+    90% {
+      opacity: 1;
+      filter: drop-shadow(5px 5px 5px #e80707);
+    }
+    100% {
+      opacity: 0;
+      filter: none;
+    }
+  }
+  
+
+
+  
+
+  
+  /* Asegúrate de revisar y ajustar los estilos de posición si utilizas 'position: absolute;' */
+  
+  
+  .apple {
+    -webkit-filter: drop-shadow(5px 5px 5px #222); /* For Safari */
+    filter: drop-shadow(5px 5px 5px #222);
+    animation: blinkAndFade 3s forwards; /* Total animation time */
+  }
+  
+  .container1 {
+    background-color: rgb(45, 46, 46); /* Este es el color inicial del fondo del body */
+    animation: changeBg -3s forwards -1s; /* Comienza a cambiar después de 7 segundos y toma 1 segundo en completarse */
+  }
+
+
+  /* Reemplaza #nuevoColor con el color que desees */
+  /* @keyframes changeBg {
+    from { background-color: rgb(45, 46, 46); }
+    to { background-color: white; } 
+    
+  } */
+
+  .container1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+  }
+
+
+
+    .fondo {
+      width: 200%;
+      height: 200%;
+  }
+
+    
+  
+
+
+  
+  .container2 {
+    position: absolute;
+    animation: showContainer2 0s forwards 0s; /* Comienza a cambiar después de 7 segundos y toma 1 segundo en completarse */
+  }
+
+  .manzana2{
+    position: absolute;
+    top: 100%;
+
+  }
+  
+  @keyframes showContainer2 {
+    from { z-index: 1; }
+    to { z-index: 0; }
+  }
+
+  .container2{
+    background-color: aquamarine;
+
+  }
+
+
+  .container2 .fondo{
+    background-color: aquamarine;
+    object-fit: cover;
+
+  }
+
+
+  .container2-cards{
+    position: absolute;
+
+  }
+
+  
+
+
+  p{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    font-size: xx-large;
+    color: antiquewhite;
+  }
+
+  .card{
+
+    position: absolute;
+    top: 1800px;
+  }
+
+  .card-img-top{
+    height: 450px;
+  }
+
+
+  .ocultar{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:300%;
+  }
+
+  .ultimamanzana{
+height: 100%;
+width:100%;
+  }
+
+
+  .ultimamanzana1{
+    height: 100%;
+    width:130.5%;
+      }
+
+  .containerrr{
+    display: block;
+    overflow: hidden;
+}
+
+#uno{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color: red;
+    display: block;
+}
+
+#dos{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color:black;
+    display: block;
+    visibility: hidden;
+}
+
+
+
+#doss{
+    position:absolute;
+    left: 300px;
+}
+
+
+.pruebas{
+    position:absolute;
+    top: 200px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+}
+
+#ocultador{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color: red;
+    display: block;
+}
+
+#ocultado{
+    position:relative;
+    width:100%;
+    height: 100%;
+    background-color:black;
+    display: block;
+}
+
+
+.container2 {
+    background-color: black;
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    animation: cambio 1s forwards 7s;
+}
+
+
+@keyframes cambio{
+    from { z-index: 2; }
+    to { z-index: 1; }
+
+
+
+}
+.link1{
+    background-color: black;
+    position:absolute;
+    width: 50%;
+    height: 10%;
+    top :70%;
+    
+}
+
+
+.link2{
+    background-color: aquamarine;
+    width: 50%;
+    height: 10%;
+    position:absolute;
+    left:50%;
+    top:70%;
+    left:65%;
+}
+
+
+.mover1{
+
+  position: absolute;
+  height: 138%;
+  width: 77.5%;
+  top: -19px;
+  left: -10px;
+
+}
+
+
+
+.mover1:hover{
+    filter: drop-shadow(10px 10px 10px #FFF)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+img {
+    -webkit-filter: drop-shadow(
+        5px 5px 5px #e70808
+        
+        );
+    filter: drop-shadow(5px 15px 35px #e80707);
+  } */
+
+
+/* 
+  @keyframes blink {
+    0%, 100% {
+      filter: drop-shadow(5px 5px 5px #e80707);
+    }
+    50% {
+      filter: drop-shadow(0px 0px 0px #e80707);
+    }
+  }
+  
+  img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222); 
+    filter: drop-shadow(5px 5px 5px #222);
+    animation: blink 3s infinite; 
+  }
+   */
+
+
+
+ 

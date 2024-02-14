@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card" style="width: 18rem;">
+                <img src="reflexiva.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <p class="card-text">Some quick example text.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card" style="width: 18rem;">
+                <img src="reflexiva.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 2</h5>
+                  <p class="card-text">Some quick example text.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card" style="width: 18rem;">
+                <img src="reflexiva.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title 3</h5>
+                  <p class="card-text">Some quick example text.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      
+
+      <script>
+        var mySwiper = new Swiper('.mySwiper', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          // Responsive breakpoints
+          breakpoints: {
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            }
+          }
+        });
+      </script>
+      
+      
+</body>
+</html>
