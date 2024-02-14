@@ -10,20 +10,26 @@
 </head>
 <html>
 
-    <div class="container1 text-center">
+<div class="container">
+
+  <!-- containerfondo -->
+
+    <div class="containerfade text-center">
         <img src="manzana.png" alt="manzana" class="apple mx-auto d-block">
     </div>
     
 
-    <div class="container2">
-        <img class="fondo" src="405338.jpg" alt="">
+    <!-- nombrar fondo -->
+
+    <div class="container_manzanas">
+        <img class="fondo" src="manzana_principal.jpg" alt="">
         <p>prueba
         </p>
         </div>
     
 
-    <div class="container2 manzana2">
-        <img class="fondo" src="artistico_850.png" alt="">
+    <div class="container_manzanas manzana2">
+        <img class="fondo" src="artistico_proporciones.png" alt="">
         <p>prueba
         </p>
     </div>
@@ -32,35 +38,72 @@
     
     
 
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="reflexiva.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title 1</h5>
-            <p class="card-text">Some quick example text.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="reflexiva.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title 2</h5>
-            <p class="card-text">Some quick example text.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="reflexiva.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title 3</h5>
-            <p class="card-text">Some quick example text.</p>
-          </div>
-        </div>
+  <!-- Cards para dispositivos md o mayores -->
+<div class="row d-none d-md-flex">
+  <div class="col-12 col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="apple-amarilla-mirror.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title 1</h5>
+        <p class="card-text">Some quick example text.</p>
       </div>
     </div>
+  </div>
+  <div class="col-12 col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="apple-roja-mirror.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title 2</h5>
+        <p class="card-text">Some quick example text.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-4">
+    <div class="card" style="width: 18rem;">
+      <img src="apple-verde-mirror.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title 3</h5>
+        <p class="card-text">Some quick example text.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carrusel para dispositivos sm o menores -->
+<div id="carouselExampleControls" class="carousel slide d-md-none" data-bs-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="apple-amarilla-mirror.png" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Card title 1</h5>
+      <p>Some quick example text.</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src="apple-roja-mirror.png" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Card title 2</h5>
+      <p>Some quick example text.</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <img src="apple-verde-mirror.png" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>Card title 3</h5>
+      <p>Some quick example text.</p>
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
     
 
       <div class="ocultar">
@@ -78,7 +121,10 @@
        
     
     </div>
-    <div class="containerrr">
+
+    <!-- formulario -->
+
+    <div class="formulario">
       <div id="uno">
           <div class="mb-3">
               <label for="formGroupExampleInput" class="form-label">Example label</label>
@@ -93,6 +139,8 @@
   
   <a id="unoo"href="#uno">prueba1</a>
   <a id="doss" href="#dos">prueba2</a>
+
+</div>
  
     
 </body>

@@ -30,7 +30,7 @@
   animation: blinkAndFade 3s forwards; /* Total animation time */
 }
 
-.container1 {
+.containerfade {
   background-color: rgb(45, 46, 46); /* Este es el color inicial del fondo del body */
   animation: changeBg -3s forwards -1s; /* Comienza a cambiar después de 7 segundos y toma 1 segundo en completarse */
 }
@@ -38,7 +38,7 @@
 
 /* Reemplaza #nuevoColor con el color que desees */
 
-.container1{
+.containerfade{
   position: absolute;
   width: 100%;
   height: 400%;
@@ -82,7 +82,7 @@
 
 
 
-.container2 {
+.container_manzanas {
   background-color: black;
   position:absolute;
   width: 100%;
@@ -98,9 +98,8 @@
 } */
 
 
-.container2 .fondo{
+.container_manzanas .fondo{
   background-color: aquamarine;
-  object-fit: cover;
 
 }
 
@@ -160,7 +159,7 @@ width:100%;
 
 
 /*Contenedor que oculta el formulario uno es el formulario dos es el div que lo oculta*/
-.containerrr {
+.formulario {
   position: absolute;
   top: 120%;
   left:29%;
