@@ -1,0 +1,52 @@
+.containerrr {
+    position: absolute;
+    top: 120%;
+    left:29%;
+    width: 700px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+  }
+  
+  #uno, #dos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 1s ease;
+    opacity: 0; /* Ambos divs comienzan invisibles para permitir la transición */
+  }
+  
+  #uno {
+    top: 80%;
+    background-color: red;
+  }
+  
+  #dos {
+    background-color: transparent;
+    opacity: 1; /* Hacer que dos sea visible por defecto */
+  }
+  
+  #uno:target, #dos:target {
+    opacity: 1;
+  }
+  
+  /* Al hacer clic fuera de los divs, se muestra dos por defecto */
+  :root:target #uno,
+  :root:target #dos {
+    opacity: 0;
+  }
+  
+  #dos:target {
+    opacity: 1;
+  }
+  
+  #uno:target {
+    opacity: 1;
+  }
+  
+  /* Especifica qué div mostrar cuando no se ha seleccionado ninguno */
+  :root:not(:target) #dos {
+    opacity: 1;
+  }
+  

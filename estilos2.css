@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
 .container {
     background-color: aquamarine;
     width: 50%;
@@ -6,32 +11,59 @@
     z-index: 1;
     
 }
-
-.containerrr{
-    position:absolute;
-    top: 600px;
+.containerrr {
+    position: absolute;
+    top: 911px;
     width: 700px;
     height: 100px;
     display: block;
     overflow: hidden;
-}
-
-#uno{
-    position:relative;
-    width:100%;
+  }
+  
+  #uno, #dos {
+    position: relative;
+    width: 100%;
     height: 100%;
+    display: block;
+    transition: opacity 1s ease;
+    opacity: 0; /* Ambos divs comienzan invisibles para permitir la transición */
+  }
+  
+  #uno {
+    top: 80%;
     background-color: red;
-    display: block;
-}
+  }
+  
+  #dos {
+    background-color: transparent;
+    opacity: 1; /* Hacer que dos sea visible por defecto */
+  }
+  
+  #uno:target, #dos:target {
+    opacity: 1;
+  }
+  
+  /* Al hacer clic fuera de los divs, se muestra dos por defecto */
+  :root:target #uno,
+  :root:target #dos {
+    opacity: 0;
+  }
+  
+  #dos:target {
+    opacity: 1;
+  }
+  
+  #uno:target {
+    opacity: 1;
+  }
+  
+  /* Especifica qué div mostrar cuando no se ha seleccionado ninguno */
+  :root:not(:target) #dos {
+    opacity: 1;
+  }
+  
 
-#dos{
-    position:relative;
-    width:100%;
-    height: 100%;
-    background-color:black;
-    display: block;
-    visibility: hidden;
-}
+
 
 
 
